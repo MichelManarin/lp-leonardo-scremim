@@ -286,7 +286,7 @@ const App: React.FC = () => {
                  <div className="benefit-card">
                    <h4>Segurança Jurídica</h4>
                    <p>Contratos empresariais com maior proteção legal</p>
-                 </div>fix
+                 </div>
                </div>
             </div>
           </div>

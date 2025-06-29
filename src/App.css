@@ -127,6 +127,18 @@ section {
   .hero-secondary:hover {
     transform: none !important;
   }
+
+  /* Remove visual effects around the building/warehouse on mobile */
+  .hero-image::before,
+  .hero-image::after {
+    display: none !important;
+  }
+  
+  .hero-image-dot-pattern,
+  .hero-image-line,
+  .hero-image-ruler {
+    display: none !important;
+  }
   
   /* Reset body scroll behavior */
   body {

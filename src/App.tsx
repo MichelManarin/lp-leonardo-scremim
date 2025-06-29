@@ -492,7 +492,7 @@ const App: React.FC = () => {
             
             <div className="about-image" data-aos="fade-left">
               <div className="image-container">
-                                 <img src="/assets/Leonardo.png" alt="Leonardo Scremin Junior - Engenheiro Civil" />
+                                 <img src="/leonardo.png" alt="Leonardo Scremin Junior - Engenheiro Civil" />
                                  <div className="image-overlay">
                    <div className="overlay-content">
                      <h4>Leonardo Scremin Junior</h4>
@@ -524,7 +524,7 @@ const App: React.FC = () => {
           <div className="projects-grid">
             <div className="project-card" data-aos="fade-up" data-aos-delay="100">
               <div className="project-image">
-                <img src="/src/assets/projects/56aaee69-8572-4acb-8433-296355a79557.jfif" alt="Galpão Industrial" />
+                <img src="/projects/56aaee69-8572-4acb-8433-296355a79557.jfif" alt="Galpão Industrial" />
                 <div className="project-overlay">
                   <a href="#" className="project-link">Ver Projeto</a>
                 </div>
@@ -538,7 +538,7 @@ const App: React.FC = () => {
 
             <div className="project-card" data-aos="fade-up" data-aos-delay="200">
               <div className="project-image">
-                <img src="/src/assets/projects/01e47198-59ec-4d5d-827a-00a135cb1a40.jfif" alt="Edifício Comercial" />
+                <img src="/projects/01e47198-59ec-4d5d-827a-00a135cb1a40.jfif" alt="Edifício Comercial" />
                 <div className="project-overlay">
                   <a href="#" className="project-link">Ver Projeto</a>
                 </div>
@@ -552,7 +552,7 @@ const App: React.FC = () => {
 
             <div className="project-card" data-aos="fade-up" data-aos-delay="300">
               <div className="project-image">
-                <img src="/src/assets/projects/4d34959b-854c-400a-a468-bc736886df9e.jfif" alt="Estrutura Industrial" />
+                <img src="/projects/4d34959b-854c-400a-a468-bc736886df9e.jfif" alt="Estrutura Industrial" />
                 <div className="project-overlay">
                   <a href="#" className="project-link">Ver Projeto</a>
                 </div>

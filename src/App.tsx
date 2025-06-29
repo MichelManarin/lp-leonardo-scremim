@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import "./index.css";
 import "./App.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -22,14 +20,6 @@ const App: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    AOS.init({
-      duration: 1200,
-      once: true,
-      easing: 'ease-out-cubic',
-      offset: 100,
-      delay: 0
-    });
-
     const handleScroll = () => {
       if (window.scrollY > 50) {
         setIsScrolled(true);
@@ -38,41 +28,10 @@ const App: React.FC = () => {
       }
     };
 
-    // Intersection Observer para animações customizadas
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
-        }
-      });
-    }, observerOptions);
-
-    // Observar elementos com classes de animação
-    const animateElements = document.querySelectorAll('.animate-on-scroll, .animate-slide-left, .animate-slide-right, .animate-scale, .animate-fade, .stagger-container');
-    animateElements.forEach(el => observer.observe(el));
-
-    // Parallax effect para elementos com classe parallax-element
-    const parallaxElements = document.querySelectorAll('.parallax-element');
-    const handleParallax = () => {
-      const scrolled = window.pageYOffset;
-      parallaxElements.forEach(element => {
-        const rate = scrolled * -0.5;
-        (element as HTMLElement).style.transform = `translateY(${rate}px)`;
-      });
-    };
-
     window.addEventListener('scroll', handleScroll);
-    window.addEventListener('scroll', handleParallax);
     
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('scroll', handleParallax);
-      observer.disconnect();
     };
   }, []);
 
@@ -327,7 +286,7 @@ const App: React.FC = () => {
                  <div className="benefit-card">
                    <h4>Segurança Jurídica</h4>
                    <p>Contratos empresariais com maior proteção legal</p>
-                 </div>
+                 </div>fix
                </div>
             </div>
           </div>
@@ -337,7 +296,7 @@ const App: React.FC = () => {
       {/* Stats Section */}
       <section className="stats-section">
         <div className="container">
-          <div className="stats-grid stagger-container" data-aos="fade-up">
+          <div className="stats-grid">
             <div className="stat-card enhanced-hover">
               <div className="stat-number">+10</div>
               <div className="stat-title">Anos de Experiência</div>
@@ -361,7 +320,7 @@ const App: React.FC = () => {
       {/* Services Section */}
       <section className="services-section" id="services">
         <div className="container">
-          <div className="section-header animate-on-scroll" data-aos="fade-up">
+          <div className="section-header">
             <span className="section-subtitle">O Que Fazemos</span>
             <h2 className="section-title">Nossos Serviços</h2>
             <p className="section-description">
@@ -369,43 +328,43 @@ const App: React.FC = () => {
             </p>
           </div>
 
-          <div className="services-grid stagger-container">
-            <div className="service-card enhanced-hover" data-aos="fade-up" data-aos-delay="100">
+          <div className="services-grid">
+            <div className="service-card enhanced-hover">
               <h3 className="service-title">Construção Comercial</h3>
               <p className="service-description">
                 Soluções completas para edifícios comerciais que cumprem prazos e orçamentos rigorosos.
               </p>
             </div>
 
-            <div className="service-card enhanced-hover" data-aos="fade-up" data-aos-delay="200">
+            <div className="service-card enhanced-hover">
               <h3 className="service-title">Projetos Estruturais</h3>
               <p className="service-description">
                 Projetos estruturais otimizados e detalhados com atenção a cada detalhe técnico.
               </p>
             </div>
 
-            <div className="service-card enhanced-hover" data-aos="fade-up" data-aos-delay="300">
+            <div className="service-card enhanced-hover">
               <h3 className="service-title">Galpões Industriais</h3>
               <p className="service-description">
                 Estruturas industriais seguras e eficientes projetadas para durabilidade.
               </p>
             </div>
 
-            <div className="service-card enhanced-hover" data-aos="fade-left" data-aos-delay="100">
+            <div className="service-card enhanced-hover">
               <h3 className="service-title">Consultoria Técnica</h3>
               <p className="service-description">
                 Assessoria especializada em todos os estágios do seu projeto de construção.
               </p>
             </div>
 
-            <div className="service-card enhanced-hover" data-aos="fade-left" data-aos-delay="200">
+            <div className="service-card enhanced-hover">
               <h3 className="service-title">Reformas & Ampliações</h3>
               <p className="service-description">
                 Transformamos espaços existentes com melhorias modernas e ampliações estruturais.
               </p>
             </div>
 
-            <div className="service-card enhanced-hover" data-aos="fade-left" data-aos-delay="300">
+            <div className="service-card enhanced-hover">
               <h3 className="service-title">Gerenciamento de Projetos</h3>
               <p className="service-description">
                 Gestão completa de projetos garantindo qualidade, segurança e eficiência.
@@ -419,7 +378,7 @@ const App: React.FC = () => {
       <section className="about-section" id="about">
         <div className="container">
           <div className="about-content">
-            <div className="about-text" data-aos="fade-right">
+            <div className="about-text">
               <div className="section-header">
                 <span className="section-subtitle">Conheça Nosso</span>
                 <h2 className="section-title">Engenheiro Responsável</h2>
@@ -489,7 +448,7 @@ const App: React.FC = () => {
               </div>
             </div>
             
-            <div className="about-image" data-aos="fade-left">
+            <div className="about-image">
               <div className="image-container">
                                  <img src="/leonardo.png" alt="Leonardo Scremin Junior - Engenheiro Civil" />
                                  <div className="image-overlay">
@@ -512,7 +471,7 @@ const App: React.FC = () => {
       {/* Projects Section */}
       <section className="projects-section" id="projects">
         <div className="container">
-          <div className="section-header" data-aos="fade-up">
+          <div className="section-header">
             <span className="section-subtitle">Nosso Portfólio</span>
             <h2 className="section-title">Projetos em Destaque</h2>
             <p className="section-description">
@@ -521,7 +480,7 @@ const App: React.FC = () => {
           </div>
 
           <div className="projects-grid">
-            <div className="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div className="project-card">
               <div className="project-image">
                 <img src="/projects/56aaee69-8572-4acb-8433-296355a79557.jfif" alt="Galpão Industrial" />
                 <div className="project-overlay">
@@ -535,7 +494,7 @@ const App: React.FC = () => {
               </div>
             </div>
 
-            <div className="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div className="project-card">
               <div className="project-image">
                 <img src="/projects/01e47198-59ec-4d5d-827a-00a135cb1a40.jfif" alt="Edifício Comercial" />
                 <div className="project-overlay">
@@ -549,7 +508,7 @@ const App: React.FC = () => {
               </div>
             </div>
 
-            <div className="project-card" data-aos="fade-up" data-aos-delay="300">
+            <div className="project-card">
               <div className="project-image">
                 <img src="/projects/4d34959b-854c-400a-a468-bc736886df9e.jfif" alt="Estrutura Industrial" />
                 <div className="project-overlay">
@@ -573,7 +532,7 @@ const App: React.FC = () => {
       {/* Testimonials Section */}
       <section className="testimonials-section" id="testimonials">
         <div className="container">
-          <div className="section-header animate-on-scroll" data-aos="fade-up">
+          <div className="section-header">
             <span className="section-subtitle">O Que Dizem Nossos Clientes</span>
             <h2 className="section-title">Depoimentos</h2>
             <p className="section-description">
@@ -582,7 +541,7 @@ const App: React.FC = () => {
           </div>
 
           <div className="testimonials-grid">
-            <div className="testimonial-card enhanced-hover" data-aos="fade-right" data-aos-delay="100">
+            <div className="testimonial-card enhanced-hover">
               <div className="testimonial-quote">
                 <FontAwesomeIcon icon={faCheckCircle} />
               </div>
@@ -601,7 +560,7 @@ const App: React.FC = () => {
               {/* INSTRUÇÃO: Substitua por foto real do cliente e depoimento verdadeiro */}
             </div>
 
-            <div className="testimonial-card enhanced-hover" data-aos="fade-up" data-aos-delay="200">
+            <div className="testimonial-card enhanced-hover">
               <div className="testimonial-quote">
                 <FontAwesomeIcon icon={faCheckCircle} />
               </div>
@@ -620,7 +579,7 @@ const App: React.FC = () => {
               {/* INSTRUÇÃO: Substitua por foto real do cliente e depoimento verdadeiro */}
             </div>
 
-            <div className="testimonial-card enhanced-hover" data-aos="fade-left" data-aos-delay="300">
+            <div className="testimonial-card enhanced-hover">
               <div className="testimonial-quote">
                 <FontAwesomeIcon icon={faCheckCircle} />
               </div>
@@ -646,7 +605,7 @@ const App: React.FC = () => {
       <section className="contact-section" id="contact">
         <div className="container">
           <div className="contact-content">
-            <div className="section-header animate-on-scroll" data-aos="fade-up">
+            <div className="section-header">
               <span className="section-subtitle">Entre em Contato</span>
               <h2 className="section-title">Fale Conosco</h2>
               <p className="section-description">
@@ -655,7 +614,7 @@ const App: React.FC = () => {
             </div>
 
             <div className="whatsapp-contact">
-              <div className="whatsapp-card animate-scale" data-aos="zoom-in" data-aos-delay="200">
+              <div className="whatsapp-card">
                 <div className="whatsapp-header">
                   <div className="whatsapp-icon">
                     <svg viewBox="0 0 24 24" fill="currentColor">

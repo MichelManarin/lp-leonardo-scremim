@@ -213,45 +213,63 @@ section {
 
 /* Mobile scroll fixes */
 @media (max-width: 768px) {
-  /* Disable parallax on mobile */
+  /* Fix hero section completely */
+  .hero-section {
+    overflow: visible !important;
+    position: static !important;
+    touch-action: auto !important;
+    -webkit-overflow-scrolling: auto !important;
+    transform: none !important;
+  }
+  
+  .hero-section::before {
+    display: none !important;
+  }
+  
+  .hero-content {
+    position: static !important;
+    transform: none !important;
+  }
+  
+  .hero-image {
+    position: static !important;
+    transform: none !important;
+  }
+  
+  /* Disable all problematic elements */
   .parallax-element {
     will-change: auto;
     transform: none !important;
   }
   
-  /* Fix hero section touch behavior */
-  .hero-section {
-    touch-action: pan-y;
-    -webkit-overflow-scrolling: touch;
-    transform: none;
-  }
-  
-  .hero-content {
-    transform: none;
+  .enhanced-hover:hover {
+    transform: none !important;
   }
   
   /* Disable transforms that can interfere with scroll */
   .hero-image:hover img {
-    transform: none;
+    transform: none !important;
   }
   
   .hero-cta:hover {
-    transform: none;
+    transform: none !important;
   }
   
   .hero-secondary:hover {
-    transform: none;
+    transform: none !important;
   }
   
-  /* Disable problematic animations on mobile */
-  .enhanced-hover:hover {
-    transform: none;
-  }
-  
-  /* Ensure smooth scrolling */
+  /* Reset body scroll behavior */
   body {
-    -webkit-overflow-scrolling: touch;
-    touch-action: pan-y;
+    position: static !important;
+    overflow: auto !important;
+    touch-action: auto !important;
+  }
+  
+  html {
+    position: static !important;
+    overflow: auto !important;
+    touch-action: auto !important;
   }
 }
 
@@ -476,7 +494,7 @@ img {
   background: var(--gradient-investment);
   color: white;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   /* Fix mobile scroll bug */
   touch-action: pan-y;
   -webkit-overflow-scrolling: touch;

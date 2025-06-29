@@ -239,7 +239,6 @@ const App: React.FC = () => {
               </div>
               <div className="hero-buttons">
                 <button className="hero-cta" onClick={handleContactWhatsApp}>Solicitar Orçamento</button>
-                <button className="hero-secondary">Ver Projetos</button>
               </div>
             </div>
             <div className="hero-image">

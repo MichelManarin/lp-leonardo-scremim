@@ -1,0 +1,566 @@
+/* Atualização de fontes e tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Sora:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Cores neutras elegantes */
+  --primary-color: #1f2937; /* Cinza escuro sofisticado */
+  --primary-light: #374151;
+  --primary-dark: #111827;
+  --accent-color: #4b5563; /* Cinza médio neutro */
+  --text-color: #111827; /* Preto suave para texto */
+  --text-light: #6b7280; /* Cinza médio */
+  --bg-light: #ffffff;
+  --bg-gray: #f9fafb; /* Cinza muito claro */
+  --bg-section: #f3f4f6; /* Fundo de seções em cinza claro */
+  --bg-dark: #111827; /* Preto sofisticado para seções especiais */
+  --border-color: #d1d5db; /* Borda neutra */
+  
+  /* Novas variáveis de fonte */
+  --heading-font: 'Playfair Display', serif;
+  --body-font: 'Sora', sans-serif;
+  --line-height-heading: 1.2;
+  --line-height-body: 1.8;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --letter-spacing-tight: -0.5px;
+  --letter-spacing-wide: 0.5px;
+}
+
+/* Estilo básico do corpo */
+body {
+  font-family: var(--body-font);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-color);
+  line-height: var(--line-height-body);
+  background-color: var(--bg-light);
+}
+
+/* Estilos para títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+  color: var(--primary-color);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+/* Hero section tipografia */
+.hero-pre-title {
+  font-family: var(--body-font);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.95rem;
+}
+
+.hero-content h1 {
+  font-family: var(--heading-font);
+  font-weight: var(--font-weight-extrabold);
+  font-size: 2.6rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+.hero-highlight {
+  font-style: italic;
+}
+
+.hero-animated-text {
+  font-weight: var(--font-weight-bold);
+}
+
+.hero-description {
+  font-family: var(--body-font);
+  font-weight: var(--font-weight-light);
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--text-light);
+}
+
+/* Botões e navegação */
+.btn {
+  font-family: var(--body-font);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+.main-nav a {
+  font-family: var(--body-font);
+  font-weight: var(--font-weight-medium);
+  font-size: 1rem;
+}
+
+/* Cabeçalhos de seção */
+.section-header h2 {
+  font-family: var(--heading-font);
+  font-weight: var(--font-weight-bold);
+  font-size: 3.5rem;
+}
+
+.section-tag {
+  font-family: var(--body-font);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.section-header p {
+  font-family: var(--body-font);
+  font-weight: var(--font-weight-light);
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Cards de serviço */
+.service-card h3 {
+  font-family: var(--heading-font);
+  font-weight: var(--font-weight-semibold);
+  font-size: 1.6rem;
+}
+
+.service-card p {
+  font-family: var(--body-font);
+  font-weight: var(--font-weight-light);
+}
+
+/* Testimonials */
+.testimonial-text {
+  font-family: var(--body-font);
+  font-weight: var(--font-weight-light);
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.author-info h4 {
+  font-family: var(--heading-font);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Footer */
+.footer-logo span {
+  font-family: var(--heading-font);
+  font-weight: var(--font-weight-bold);
+}
+
+.footer-about p {
+  font-family: var(--body-font);
+  font-weight: var(--font-weight-light);
+}
+
+.footer-links h4,
+.footer-services h4,
+.footer-contact h4 {
+  font-family: var(--heading-font);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Animação de Construção */
+.hero-construction-animation {
+  position: relative;
+  width: 100%;
+}
+
+.animation-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  background-color: #F8F9FA;
+}
+
+.construction-stage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.stage-base {
+  background-image: url('./assets/construction/stage1-base.png');
+  opacity: 1;
+}
+
+.stage-foundation {
+  background-image: url('./assets/construction/stage2-foundation.png');
+}
+
+.stage-pillars {
+  background-image: url('./assets/construction/stage3-pillars.png');
+}
+
+.stage-beams {
+  background-image: url('./assets/construction/stage4-beams.png');
+}
+
+.stage-roof {
+  background-image: url('./assets/construction/stage5-roof.png');
+}
+
+.stage-walls {
+  background-image: url('./assets/construction/stage6-walls.png');
+}
+
+.stage-complete {
+  background-image: url('./assets/construction/stage7-complete.png');
+}
+
+/* Controles da animação */
+.animation-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.animation-progress {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: var(--accent-color);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.progress-stages {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.stage-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 14.28%;
+  cursor: pointer;
+  position: relative;
+}
+
+.marker-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+  border: 2px solid white;
+}
+
+.stage-marker.active .marker-dot,
+.stage-marker:hover .marker-dot {
+  background-color: var(--accent-color);
+  transform: scale(1.2);
+}
+
+.stage-marker span {
+  font-size: 0.7rem;
+  color: var(--text-light);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 20px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(-5px);
+}
+
+.stage-marker.active span,
+.stage-marker:hover span {
+  opacity: 1;
+  transform: translateY(0);
+  color: var(--primary-color);
+}
+
+.animation-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.animation-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.animation-btn:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.btn-play {
+  background-color: var(--accent-color);
+}
+
+/* Informações de construção */
+.construction-info {
+  position: absolute;
+  top: 20px;
+  right: -20px;
+}
+
+.info-badge {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.badge-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 160, 0, 0.1);
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.badge-text span {
+  font-weight: 700;
+  color: var(--primary-color);
+  display: block;
+  line-height: 1.2;
+}
+
+.badge-text p {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin: 0;
+}
+
+/* Botão de processo */
+.hero-process-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-family: var(--body-font);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-process-btn:hover {
+  color: var(--accent-color);
+}
+
+.process-icon {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+/* Tutorial Modal */
+.tutorial-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.tutorial-container {
+  background-color: white;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 40px;
+  position: relative;
+}
+
+.tutorial-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-light);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tutorial-close:hover {
+  color: var(--primary-color);
+  transform: rotate(90deg);
+}
+
+.tutorial-container h3 {
+  font-family: var(--heading-font);
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.tutorial-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.tutorial-step {
+  display: flex;
+  gap: 20px;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.step-content h4 {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 1.25rem;
+}
+
+.step-content p {
+  color: var(--text-light);
+  margin: 0;
+}
+
+.tutorial-benefits {
+  background-color: var(--bg-gray);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.benefit-item i {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
+
+.benefit-item span {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.tutorial-container .btn {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .animation-container {
+    height: 400px;
+  }
+  
+  .stage-marker span {
+    display: none;
+  }
+  
+  .tutorial-steps {
+    gap: 20px;
+  }
+  
+  .tutorial-benefits {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .animation-container {
+    height: 300px;
+  }
+  
+  .animation-controls {
+    padding: 10px;
+  }
+  
+  .marker-dot {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .tutorial-container {
+    padding: 30px 20px;
+  }
+  
+  .tutorial-step {
+    gap: 15px;
+  }
+}

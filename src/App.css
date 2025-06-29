@@ -40,12 +40,21 @@ body {
   font-weight: 300; /* Fonte mais fina para um visual clean */
   max-width: 100vw;
   position: relative;
+  /* Mobile scroll fixes */
+  touch-action: manipulation;
+  -webkit-overflow-scrolling: touch;
 }
 
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   max-width: 100%;
+  /* Mobile scroll fixes */
+  touch-action: manipulation;
+  -webkit-overflow-scrolling: touch;
+  /* Prevent iOS bounce */
+  height: 100%;
+  overflow: auto;
 }
 
 /* Prevent horizontal scroll on all elements */
@@ -200,6 +209,50 @@ section {
 .parallax-element {
   will-change: transform;
   transition: transform 0.1s linear;
+}
+
+/* Mobile scroll fixes */
+@media (max-width: 768px) {
+  /* Disable parallax on mobile */
+  .parallax-element {
+    will-change: auto;
+    transform: none !important;
+  }
+  
+  /* Fix hero section touch behavior */
+  .hero-section {
+    touch-action: pan-y;
+    -webkit-overflow-scrolling: touch;
+    transform: none;
+  }
+  
+  .hero-content {
+    transform: none;
+  }
+  
+  /* Disable transforms that can interfere with scroll */
+  .hero-image:hover img {
+    transform: none;
+  }
+  
+  .hero-cta:hover {
+    transform: none;
+  }
+  
+  .hero-secondary:hover {
+    transform: none;
+  }
+  
+  /* Disable problematic animations on mobile */
+  .enhanced-hover:hover {
+    transform: none;
+  }
+  
+  /* Ensure smooth scrolling */
+  body {
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+  }
 }
 
 /* Section Transitions */
@@ -424,6 +477,9 @@ img {
   color: white;
   position: relative;
   overflow: hidden;
+  /* Fix mobile scroll bug */
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
 }
 
 .hero-section::before {

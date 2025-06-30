@@ -1989,7 +1989,7 @@ img {
   }
 
   .investment-stats {
-    order: -1;
+    order: 2;
   }
   
   .footer-top {
@@ -2138,24 +2138,40 @@ img {
     font-size: 2.5rem;
   }
 
-  /* Reorganize investment section on mobile */
-  .investment-stats {
+  /* Reorganize investment section on mobile - text first, then cards, then highlight */
+  .investment-content {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
 
-  .stat-highlight {
-    order: 1;
+  .investment-text {
+    order: 1 !important;
+  }
+
+  .investment-text .section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .investment-features {
+    order: 2 !important;
+  }
+
+  .investment-stats {
+    order: 3 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   .investment-benefits {
-    order: 2;
+    order: 1;
   }
 
-  /* Make stat highlight more prominent on mobile */
   .stat-highlight {
-    margin-bottom: 1rem;
+    order: 2;
+    margin-top: 1rem;
     padding: 2.5rem 2rem;
     text-align: center;
   }
@@ -2259,21 +2275,41 @@ img {
     padding: 4rem 0;
   }
 
-  /* Ensure proper order on smaller mobile screens */
-  .investment-stats {
+  /* Ensure proper order on smaller mobile screens - text first, then cards, then highlight */
+  .investment-content {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
   }
 
-  .stat-highlight {
-    order: 1;
-    padding: 2rem 1.5rem;
-    margin-bottom: 1rem;
+  .investment-text {
+    order: 1 !important;
+  }
+
+  .investment-text .section-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .investment-features {
+    order: 2 !important;
+  }
+
+  .investment-stats {
+    order: 3 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 
   .investment-benefits {
+    order: 1;
+  }
+
+  .stat-highlight {
     order: 2;
+    padding: 2rem 1.5rem;
+    margin-top: 1rem;
   }
 
   .stat-number {

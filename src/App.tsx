@@ -384,7 +384,7 @@ const App: React.FC = () => {
             <div className="about-text">
               <div className="section-header">
                 <span className="section-subtitle">Conheça Nosso</span>
-                <h2 className="section-title">Engenheiro Responsável</h2>
+                <h2 className="section-title">Sócio proprietário e Engenheiro</h2>
               </div>
               
               <div className="about-info">

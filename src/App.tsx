@@ -157,6 +157,9 @@ const App: React.FC = () => {
           </div>
 
           <nav className={`navigation ${menuOpen ? 'active' : ''}`}>
+            <div className="mobile-menu-close" onClick={() => setMenuOpen(false)}>
+              <FontAwesomeIcon icon={faTimes} />
+            </div>
             <ul className="nav-links">
               <li><a href="#home" className="active">Início</a></li>
               <li><a href="#services">Serviços</a></li>

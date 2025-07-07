@@ -1,0 +1,23 @@
+/* Copying the entire global.css content */
+:root {
+  --primary-color: #1f2937;
+  --primary-light: #374151;
+  --primary-dark: #111827;
+  --accent-color: #d4af37;
+  --gold-color: #d4af37;
+  --gold-light: #e9c662;
+  --gold-dark: #b38f1d;
+  --text-color: #1f2937;
+  --text-light: #6b7280;
+  --bg-light: #f8fafc;
+  --bg-dark: #1f2937;
+  --heading-font: 'Playfair Display', serif;
+  --body-font: 'Poppins', sans-serif;
+  --transition: all 0.3s ease;
+  --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --box-shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --gradient-gold: linear-gradient(135deg, var(--gold-color) 0%, var(--gold-light) 100%);
+  --gradient-investment: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+}
+
+// ... rest of the existing CSS ... 

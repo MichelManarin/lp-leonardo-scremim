@@ -2,10 +2,10 @@ import { Metadata } from 'next'
 import HomeContent from '../components/HomeContent'
 
 export const metadata: Metadata = {
-  title: 'Premolde Lauro Müller - Galpões Industriais e Estruturas Metálicas',
-  description: 'Premolde Lauro Müller - Especialistas em galpões industriais, estruturas metálicas e projetos estruturais em Lauro Müller, SC. Engenheiro CREA ativo. Orçamento gratuito!',
+  title: 'Premoldado Lauro Müller - Galpões Industriais e Estruturas Metálicas',
+  description: 'Premoldado Lauro Müller - Especialistas em galpões industriais, estruturas metálicas e projetos estruturais em Lauro Müller, SC. Engenheiro CREA ativo. Orçamento gratuito!',
   keywords: [
-    'premolde lauro muller',
+    'premoldado lauro muller',
     'galpões industriais lauro muller',
     'estruturas metálicas lauro muller',
     'engenharia estrutural lauro muller',
@@ -15,12 +15,12 @@ export const metadata: Metadata = {
     'Santa Catarina'
   ],
   openGraph: {
-    title: 'Premolde Lauro Müller - Galpões Industriais e Estruturas Metálicas',
+    title: 'Premoldado Lauro Müller - Galpões Industriais e Estruturas Metálicas',
     description: 'Especialistas em galpões industriais e estruturas metálicas em Lauro Müller, SC. Engenheiro CREA ativo.',
-    url: 'https://premolde.com.br/premolde-lauro-muller',
+    url: 'https://premolde.com.br/premoldado-lauro-muller',
   },
   alternates: {
-    canonical: 'https://premolde.com.br/premolde-lauro-muller',
+    canonical: 'https://premolde.com.br/premoldado-lauro-muller',
   },
 }
 

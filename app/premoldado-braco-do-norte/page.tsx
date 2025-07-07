@@ -2,10 +2,10 @@ import { Metadata } from 'next'
 import HomeContent from '../components/HomeContent'
 
 export const metadata: Metadata = {
-  title: 'Premolde Braço do Norte - Galpões Industriais e Estruturas Metálicas',
-  description: 'Premolde Braço do Norte - Especialistas em galpões industriais, estruturas metálicas e projetos estruturais em Braço do Norte, SC. Engenheiro CREA ativo. Orçamento gratuito!',
+  title: 'Premoldado Braço do Norte - Galpões Industriais e Estruturas Metálicas',
+  description: 'Premoldado Braço do Norte - Especialistas em galpões industriais, estruturas metálicas e projetos estruturais em Braço do Norte, SC. Engenheiro CREA ativo. Orçamento gratuito!',
   keywords: [
-    'premolde braco do norte',
+    'premoldado braco do norte',
     'galpões industriais braco do norte',
     'estruturas metálicas braco do norte',
     'engenharia estrutural braco do norte',
@@ -15,12 +15,12 @@ export const metadata: Metadata = {
     'Santa Catarina'
   ],
   openGraph: {
-    title: 'Premolde Braço do Norte - Galpões Industriais e Estruturas Metálicas',
+    title: 'Premoldado Braço do Norte - Galpões Industriais e Estruturas Metálicas',
     description: 'Especialistas em galpões industriais e estruturas metálicas em Braço do Norte, SC. Engenheiro CREA ativo.',
-    url: 'https://premolde.com.br/premolde-braco-do-norte',
+    url: 'https://premolde.com.br/premoldado-braco-do-norte',
   },
   alternates: {
-    canonical: 'https://premolde.com.br/premolde-braco-do-norte',
+    canonical: 'https://premolde.com.br/premoldado-braco-do-norte',
   },
 }
 

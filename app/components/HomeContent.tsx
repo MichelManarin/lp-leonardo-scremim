@@ -4,7 +4,11 @@ import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faTools, faHardHat, faBuilding, faClock, faPhone, faEnvelope, faPlayCircle, faTimes, faAward, faRedo, faPause } from '@fortawesome/free-solid-svg-icons';
 
-export default function HomeContent() {
+interface HomeContentProps {
+  city?: string;
+}
+
+export default function HomeContent({ city }: HomeContentProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [currentStage, setCurrentStage] = useState(1);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -175,8 +179,15 @@ export default function HomeContent() {
                 de Alta Qualidade
               </h1>
               <p className="hero-description">
-                Projetos estruturais robustos e duradouros que atendem às mais rigorosas normas de segurança. 
-                Cada detalhe é pensado para maximizar funcionalidade e durabilidade.
+                {city ? (
+                  <>
+                    Projetos estruturais robustos e duradouros que atendem às mais rigorosas normas de segurança em{' '}
+                    <span className="gold-gradient-text">{city}</span>
+                    . Cada detalhe é pensado para maximizar funcionalidade e durabilidade.
+                  </>
+                ) : (
+                  'Projetos estruturais robustos e duradouros que atendem às mais rigorosas normas de segurança. Cada detalhe é pensado para maximizar funcionalidade e durabilidade.'
+                )}
               </p>
               <div className="hero-stats">
                 <div className="hero-stat">

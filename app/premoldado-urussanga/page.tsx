@@ -2,10 +2,10 @@ import { Metadata } from 'next'
 import HomeContent from '../components/HomeContent'
 
 export const metadata: Metadata = {
-  title: 'Premolde Urussanga - Galpões Industriais e Estruturas Metálicas',
-  description: 'Premolde Urussanga - Especialistas em galpões industriais, estruturas metálicas e projetos estruturais em Urussanga, SC. Engenheiro CREA ativo. Orçamento gratuito!',
+  title: 'Premoldado Urussanga - Galpões Industriais e Estruturas Metálicas',
+  description: 'Premoldado Urussanga - Especialistas em galpões industriais, estruturas metálicas e projetos estruturais em Urussanga, SC. Engenheiro CREA ativo. Orçamento gratuito!',
   keywords: [
-    'premolde urussanga',
+    'premoldado urussanga',
     'galpões industriais urussanga',
     'estruturas metálicas urussanga',
     'engenharia estrutural urussanga',
@@ -15,12 +15,12 @@ export const metadata: Metadata = {
     'Santa Catarina'
   ],
   openGraph: {
-    title: 'Premolde Urussanga - Galpões Industriais e Estruturas Metálicas',
+    title: 'Premoldado Urussanga - Galpões Industriais e Estruturas Metálicas',
     description: 'Especialistas em galpões industriais e estruturas metálicas em Urussanga, SC. Engenheiro CREA ativo.',
-    url: 'https://premolde.com.br/premolde-urussanga',
+    url: 'https://premolde.com.br/premoldado-urussanga',
   },
   alternates: {
-    canonical: 'https://premolde.com.br/premolde-urussanga',
+    canonical: 'https://premolde.com.br/premoldado-urussanga',
   },
 }
 

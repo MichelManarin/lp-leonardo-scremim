@@ -2,10 +2,10 @@ import { Metadata } from 'next'
 import HomeContent from '../components/HomeContent'
 
 export const metadata: Metadata = {
-  title: 'Premolde São Ludgero - Galpões Industriais e Estruturas Metálicas',
-  description: 'Premolde São Ludgero - Especialistas em galpões industriais, estruturas metálicas e projetos estruturais em São Ludgero, SC. Engenheiro CREA ativo. Orçamento gratuito!',
+  title: 'Premoldado São Ludgero - Galpões Industriais e Estruturas Metálicas',
+  description: 'Premoldado São Ludgero - Especialistas em galpões industriais, estruturas metálicas e projetos estruturais em São Ludgero, SC. Engenheiro CREA ativo. Orçamento gratuito!',
   keywords: [
-    'premolde sao ludgero',
+    'premoldado sao ludgero',
     'galpões industriais sao ludgero',
     'estruturas metálicas sao ludgero',
     'engenharia estrutural sao ludgero',
@@ -15,12 +15,12 @@ export const metadata: Metadata = {
     'Santa Catarina'
   ],
   openGraph: {
-    title: 'Premolde São Ludgero - Galpões Industriais e Estruturas Metálicas',
+    title: 'Premoldado São Ludgero - Galpões Industriais e Estruturas Metálicas',
     description: 'Especialistas em galpões industriais e estruturas metálicas em São Ludgero, SC. Engenheiro CREA ativo.',
-    url: 'https://premolde.com.br/premolde-sao-ludgero',
+    url: 'https://premolde.com.br/premoldado-sao-ludgero',
   },
   alternates: {
-    canonical: 'https://premolde.com.br/premolde-sao-ludgero',
+    canonical: 'https://premolde.com.br/premoldado-sao-ludgero',
   },
 }
 

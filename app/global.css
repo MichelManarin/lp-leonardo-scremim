@@ -3003,3 +3003,12 @@ img {
   font-weight: 600;
   font-family: var(--heading-font);
 }
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, var(--gold-color) 0%, var(--gold-light) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+  display: inline-block;
+}

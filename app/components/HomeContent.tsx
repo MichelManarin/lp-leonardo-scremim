@@ -1,6 +1,5 @@
 'use client'
 
-import '../global.css'
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faTools, faHardHat, faBuilding, faClock, faPhone, faEnvelope, faPlayCircle, faTimes, faAward, faRedo, faPause } from '@fortawesome/free-solid-svg-icons';
@@ -158,7 +157,6 @@ export default function HomeContent() {
               <li><a href="#services">Serviços</a></li>
               <li><a href="#about">Sobre</a></li>
               <li><a href="#projects">Projetos</a></li>
-              <li><a href="#cities">Cidades</a></li>
               <li><a href="#testimonials">Depoimentos</a></li>
             </ul>
             <button className="nav-cta" onClick={handleContactWhatsApp}>Solicitar Orçamento</button>
@@ -173,7 +171,7 @@ export default function HomeContent() {
             <div className="hero-text">
               <span className="hero-pre-title">Engenharia de Excelência em Santa Catarina</span>
               <h1 className="hero-title" style={{fontSize: '3rem'}}>
-                <span className="hero-highlight">Galpões Industriais</span><br />
+                <span className="hero-highlight">Galpões Industriais</span>{' '}<br />
                 de Alta Qualidade
               </h1>
               <p className="hero-description">
@@ -186,7 +184,7 @@ export default function HomeContent() {
                   <div className="stat-label">Obras Executadas</div>
                 </div>
                 <div className="hero-stat">
-                  <div className="stat-number">10+</div>
+                  <div className="stat-number">+10</div>
                   <div className="stat-label">Anos de Experiência</div>
                 </div>
                 <div className="hero-stat">
@@ -294,20 +292,20 @@ export default function HomeContent() {
       {/* Stats Section */}
       <section className="stats-section">
         <div className="container">
-          <div className="stats-grid mb-2 mt-2">
-            <div className="stat-card enhanced-hover">
+          <div className="stats-grid">
+            <div className="stat-card">
               <div className="stat-number">+10</div>
               <div className="stat-title">Anos de Experiência</div>
             </div>
-            <div className="stat-card enhanced-hover">
+            <div className="stat-card">
               <div className="stat-number">+1000</div>
               <div className="stat-title">Projetos Elaborados</div>
             </div>
-            <div className="stat-card enhanced-hover">
+            <div className="stat-card">
               <div className="stat-number">+800</div>
               <div className="stat-title">Obras Executadas</div>
             </div>
-            <div className="stat-card enhanced-hover">
+            <div className="stat-card">
               <div className="stat-number">100%</div>
               <div className="stat-title">Engenharia Própria</div>
             </div>
@@ -318,52 +316,52 @@ export default function HomeContent() {
       {/* Services Section */}
       <section className="services-section" id="services">
         <div className="container">
-          <div className="section-header">
+          <div className="section-header text-center">
             <span className="section-subtitle">O Que Fazemos</span>
             <h2 className="section-title">Nossos Serviços</h2>
             <p className="section-description">
-              Do projeto conceitual à conclusão, oferecemos soluções de construção abrangentes adaptadas às suas necessidades. 
-              Atendemos toda a região de Santa Catarina com galpões industriais, estruturas metálicas e projetos estruturais de alta qualidade.
+              Do projeto conceitual à conclusão, oferecemos soluções de construção<br/>
+              abrangentes adaptadas às suas necessidades.
             </p>
           </div>
 
           <div className="services-grid">
-            <div className="service-card enhanced-hover">
+            <div className="service-card">
               <h3 className="service-title">Construção Comercial</h3>
               <p className="service-description">
                 Soluções completas para edifícios comerciais que cumprem prazos e orçamentos rigorosos.
               </p>
             </div>
 
-            <div className="service-card enhanced-hover">
+            <div className="service-card">
               <h3 className="service-title">Projetos Estruturais</h3>
               <p className="service-description">
                 Projetos estruturais otimizados e detalhados com atenção a cada detalhe técnico.
               </p>
             </div>
 
-            <div className="service-card enhanced-hover">
+            <div className="service-card">
               <h3 className="service-title">Galpões Industriais</h3>
               <p className="service-description">
                 Estruturas industriais seguras e eficientes projetadas para durabilidade.
               </p>
             </div>
 
-            <div className="service-card enhanced-hover">
+            <div className="service-card">
               <h3 className="service-title">Consultoria Técnica</h3>
               <p className="service-description">
                 Assessoria especializada em todos os estágios do seu projeto de construção.
               </p>
             </div>
 
-            <div className="service-card enhanced-hover">
+            <div className="service-card">
               <h3 className="service-title">Reformas & Ampliações</h3>
               <p className="service-description">
                 Transformamos espaços existentes com melhorias modernas e ampliações estruturais.
               </p>
             </div>
 
-            <div className="service-card enhanced-hover">
+            <div className="service-card">
               <h3 className="service-title">Gerenciamento de Projetos</h3>
               <p className="service-description">
                 Gestão completa de projetos garantindo qualidade, segurança e eficiência.
@@ -379,14 +377,18 @@ export default function HomeContent() {
           <div className="about-content">
             <div className="about-text">
               <div className="section-header">
-                <span className="section-subtitle">Conheça Nosso</span>
-                <h2 className="section-title">Sócio proprietário e Engenheiro</h2>
+                <span className="section-subtitle">CONHEÇA NOSSO</span>
+                <div className="about-titles">
+                  <h2 className="section-title socio-title">
+                    Sócio proprietário e<br/>
+                    Engenheiro
+                  </h2>
+                  <h3 className="engineer-name">Leonardo Scremin Junior</h3>
+                  <p className="engineer-title">ENGENHEIRO CIVIL</p>
+                </div>
               </div>
               
               <div className="about-info">
-                <h3 className="engineer-name">Leonardo Scremin Junior</h3>
-                <p className="engineer-title">Engenheiro Civil</p>
-                
                 <div className="about-description">
                   <p>
                     Com mais de uma década de experiência em projetos estruturais e construção civil, 
@@ -472,7 +474,7 @@ export default function HomeContent() {
         <div className="container">
           <div className="section-header">
             <span className="section-subtitle">Nosso Portfólio</span>
-            <h2 className="section-title">Projetos em Destaque</h2>
+            <h2 className="section-title socio-title">Projetos em Destaque</h2>
             <p className="section-description">
               Confira nossa vitrine de projetos concluídos que demonstram nossa expertise e qualidade.
             </p>
@@ -544,9 +546,9 @@ export default function HomeContent() {
         <div className="container">
           <div className="section-header">
             <span className="section-subtitle">Nossa Região de Atendimento</span>
-            <h2 className="section-title">Atendemos Santa Catarina</h2>
+            <h2 className="section-title socio-title">Atendemos sul de Santa Catarina</h2>
             <p className="section-description">
-              Oferecemos serviços de engenharia estrutural e construção de galpões industriais em toda a região de Santa Catarina.
+              Oferecemos serviços de engenharia estrutural e construção de galpões industriais em toda a região sul de Santa Catarina.
             </p>
           </div>
 
@@ -659,7 +661,7 @@ export default function HomeContent() {
           <div className="contact-content">
             <div className="section-header">
               <span className="section-subtitle">Entre em Contato</span>
-              <h2 className="section-title">Fale Conosco</h2>
+              <h2 className="section-title socio-title">Fale Conosco</h2>
               <p className="section-description">
                 Tem um projeto em mente? Entre em contato conosco pelo WhatsApp e solicite seu orçamento!
               </p>
@@ -759,7 +761,7 @@ export default function HomeContent() {
 
           <div className="footer-bottom">
             <p className="copyright">
-              © {new Date().getFullYear()} Premolde Engenharia. Todos os direitos reservados.
+              © {new Date().getFullYear()} Premolde Engenharia | CNPJ 59.670.329/0001-02 | Todos os direitos reservados.
             </p>
             <div className="footer-social">
               <a href="#" className="social-link">

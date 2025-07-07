@@ -1,5 +1,6 @@
 'use client'
 
+import '../global.css'
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faTools, faHardHat, faBuilding, faClock, faPhone, faEnvelope, faPlayCircle, faTimes, faAward, faRedo, faPause } from '@fortawesome/free-solid-svg-icons';

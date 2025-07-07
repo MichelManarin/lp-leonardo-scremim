@@ -190,32 +190,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .stage-base {
-  background-image: url('./assets/construction/stage1-base.png');
+  /* background-image: url('./assets/construction/stage1-base.png'); */
+  background-color: #f8f9fa;
   opacity: 1;
 }
 
 .stage-foundation {
-  background-image: url('./assets/construction/stage2-foundation.png');
+  /* background-image: url('./assets/construction/stage2-foundation.png'); */
+  background-color: #e9ecef;
 }
 
 .stage-pillars {
-  background-image: url('./assets/construction/stage3-pillars.png');
+  /* background-image: url('./assets/construction/stage3-pillars.png'); */
+  background-color: #dee2e6;
 }
 
 .stage-beams {
-  background-image: url('./assets/construction/stage4-beams.png');
+  /* background-image: url('./assets/construction/stage4-beams.png'); */
+  background-color: #ced4da;
 }
 
 .stage-roof {
-  background-image: url('./assets/construction/stage5-roof.png');
+  /* background-image: url('./assets/construction/stage5-roof.png'); */
+  background-color: #adb5bd;
 }
 
 .stage-walls {
-  background-image: url('./assets/construction/stage6-walls.png');
+  /* background-image: url('./assets/construction/stage6-walls.png'); */
+  background-color: #6c757d;
 }
 
 .stage-complete {
-  background-image: url('./assets/construction/stage7-complete.png');
+  /* background-image: url('./assets/construction/stage7-complete.png'); */
+  background-color: #495057;
 }
 
 /* Controles da animação */

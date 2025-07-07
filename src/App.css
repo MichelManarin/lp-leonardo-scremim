@@ -464,7 +464,6 @@ img {
   /* animation removed */
   /* animation-delay removed */
   opacity: 1;
-  padding-bottom: 0.5rem;
 }
 
 .hero-stat {
@@ -667,6 +666,7 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+  padding-bottom: 1rem;
 }
 
 .stat-card {
@@ -927,6 +927,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .credential-item {

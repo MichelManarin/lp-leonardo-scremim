@@ -299,7 +299,7 @@ const App: React.FC = () => {
       {/* Stats Section */}
       <section className="stats-section">
         <div className="container">
-          <div className="stats-grid">
+          <div className="stats-grid mb-2 mt-2">
             <div className="stat-card enhanced-hover">
               <div className="stat-number">+10</div>
               <div className="stat-title">Anos de Experiência</div>
@@ -485,50 +485,63 @@ const App: React.FC = () => {
           <div className="projects-grid">
             <div className="project-card">
               <div className="project-image">
-                <img src="/projects/56aaee69-8572-4acb-8433-296355a79557.jfif" alt="Galpão Industrial" />
-                <div className="project-overlay">
-                  <a href="#" className="project-link">Ver Projeto</a>
-                </div>
+                <img src="/assets/destaque1.jpg" alt="Bebidas Tomasi" />
               </div>
               <div className="project-content">
                 <span className="project-category">Industrial</span>
-                <h3 className="project-title">Galpão Logístico</h3>
-                <p className="project-location">São Paulo, SP</p>
+                <h3 className="project-title">Bebidas Tomasi</h3>
+                <p className="project-location">Lauro Müller, SC</p>
               </div>
             </div>
 
             <div className="project-card">
               <div className="project-image">
                 <img src="/projects/01e47198-59ec-4d5d-827a-00a135cb1a40.jfif" alt="Edifício Comercial" />
-                <div className="project-overlay">
-                  <a href="#" className="project-link">Ver Projeto</a>
-                </div>
               </div>
               <div className="project-content">
                 <span className="project-category">Comercial</span>
                 <h3 className="project-title">Centro Empresarial</h3>
-                <p className="project-location">Rio de Janeiro, RJ</p>
+                <p className="project-location">Orleans, SC</p>
               </div>
             </div>
 
-            <div className="project-card">
-              <div className="project-image">
-                <img src="/projects/4d34959b-854c-400a-a468-bc736886df9e.jfif" alt="Estrutura Industrial" />
-                <div className="project-overlay">
-                  <a href="#" className="project-link">Ver Projeto</a>
+            <div className="project-card next-success-card">
+              <div className="project-image next-success-image">
+                <div className="next-success-background-pattern"></div>
+                <div className="next-success-overlay">
+                  <div className="next-success-icon-container">
+                    <div className="next-success-icon">
+                      <FontAwesomeIcon icon={faAward} />
+                    </div>
+                    <div className="success-sparkles">
+                      <span className="sparkle sparkle-1">✨</span>
+                      <span className="sparkle sparkle-2">⭐</span>
+                      <span className="sparkle sparkle-3">✨</span>
+                    </div>
+                  </div>
+                  <h3 className="next-success-title">
+                    <span className="title-highlight">Seu Projeto</span>
+                    <span className="title-main">Pode Ser o Próximo!</span>
+                  </h3>
                 </div>
               </div>
-              <div className="project-content">
-                <span className="project-category">Estrutural</span>
-                <h3 className="project-title">Complexo Industrial</h3>
-                <p className="project-location">Belo Horizonte, MG</p>
+              <div className="project-content next-success-content">
+                <div className="category-container">
+                  <span className="project-category next-success-category">
+                    <FontAwesomeIcon icon={faAward} className="category-icon" />
+                    Próximo Case de Sucesso
+                  </span>
+                </div>
+                <h3 className="project-title next-success-project-title">Seu Projeto Aqui</h3>
+                <p className="project-location next-success-location">
+                  <FontAwesomeIcon icon={faBuilding} className="location-icon" />
+                  Sua Cidade, SC
+                </p>
               </div>
             </div>
           </div>
 
-          <div className="projects-cta">
-            <a href="#" className="btn-primary">Ver Todos os Projetos</a>
-          </div>
+
         </div>
       </section>
 

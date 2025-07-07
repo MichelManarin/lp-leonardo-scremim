@@ -14,14 +14,6 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: false,
   },
-  // Copy sitemap.xml to output directory during build
-  async redirects() {
-    return [];
-  },
-  // Copy files to output directory during build
-  async rewrites() {
-    return [];
-  },
   // Copy sitemap.xml to output directory
   webpack: (config, { isServer }) => {
     if (isServer) {

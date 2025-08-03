@@ -505,11 +505,11 @@ export default function HomeContent({ city }: HomeContentProps) {
 
             <div className="project-card">
               <div className="project-image">
-                <img src="/projects/01e47198-59ec-4d5d-827a-00a135cb1a40.jfif" alt="Edifício Comercial" />
+                <img src="/assets/destaque2.png" alt="Jean" />
               </div>
               <div className="project-content">
-                <span className="project-category">Comercial</span>
-                <h3 className="project-title">Centro Empresarial</h3>
+                <span className="project-category">Industrial</span>
+                <h3 className="project-title">Jean</h3>
                 <p className="project-location">Orleans, SC</p>
               </div>
             </div>

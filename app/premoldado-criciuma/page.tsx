@@ -2,21 +2,29 @@ import { Metadata } from 'next'
 import HomeContent from '../components/HomeContent'
 
 export const metadata: Metadata = {
-  title: 'Premoldado Criciúma - Galpões Industriais e Estruturas Metálicas',
-  description: 'Premoldado Criciúma - Especialistas em galpões industriais, estruturas metálicas e projetos estruturais em Criciúma, SC. Engenheiro CREA ativo. Orçamento gratuito!',
+  title: 'Premoldado Criciúma SC - Galpões Industriais e Estruturas Premoldadas',
+  description: 'Premoldado Criciúma SC - Especialistas em galpões industriais premoldados, estruturas metálicas e construções premoldadas em Criciúma, Santa Catarina. Engenheiro CREA ativo. Orçamento gratuito!',
   keywords: [
     'premoldado criciuma',
+    'premoldados criciuma',
+    'premoldado criciuma sc',
+    'galpões premoldados criciuma',
+    'estruturas premoldadas criciuma',
+    'construção premoldada criciuma',
     'galpões industriais criciuma',
     'estruturas metálicas criciuma',
     'engenharia estrutural criciuma',
     'construção civil criciuma',
     'projetos estruturais criciuma',
+    'premolde criciuma',
     'Criciúma SC',
-    'Santa Catarina'
+    'Santa Catarina',
+    'sistema premoldado',
+    'concreto premoldado criciuma'
   ],
   openGraph: {
-    title: 'Premoldado Criciúma - Galpões Industriais e Estruturas Metálicas',
-    description: 'Especialistas em galpões industriais e estruturas metálicas em Criciúma, SC. Engenheiro CREA ativo.',
+    title: 'Premoldado Criciúma SC - Galpões Industriais e Estruturas Premoldadas',
+    description: 'Especialistas em galpões industriais premoldados e estruturas metálicas em Criciúma, SC. Engenheiro CREA ativo.',
     url: 'https://premolde.com.br/premoldado-criciuma',
   },
   alternates: {

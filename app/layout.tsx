@@ -2,20 +2,30 @@ import './global.css'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Premolde - Galpões Industriais e Estruturas Metálicas',
-  description: 'Premolde - Especialistas em galpões industriais, estruturas metálicas e projetos estruturais em Santa Catarina. Engenheiro CREA ativo. Orçamento gratuito!',
+  title: 'Premolde - Galpões Industriais Premoldados e Estruturas Metálicas SC',
+  description: 'Premolde - Especialistas em galpões industriais premoldados, estruturas metálicas e projetos estruturais em Santa Catarina. Sistema premoldado com qualidade superior. Engenheiro CREA ativo. Orçamento gratuito!',
   keywords: [
     'premolde',
+    'premoldado',
+    'premoldados',
+    'galpões premoldados',
+    'estruturas premoldadas',
+    'sistema premoldado',
+    'concreto premoldado',
+    'construção premoldada',
     'galpões industriais',
     'estruturas metálicas',
     'engenharia estrutural',
     'construção civil',
     'projetos estruturais',
-    'Santa Catarina'
+    'Santa Catarina',
+    'Orleans',
+    'Criciúma',
+    'Urussanga'
   ],
   openGraph: {
-    title: 'Premolde - Galpões Industriais e Estruturas Metálicas',
-    description: 'Especialistas em galpões industriais e estruturas metálicas em Santa Catarina. Engenheiro CREA ativo.',
+    title: 'Premolde - Galpões Industriais Premoldados e Estruturas Metálicas SC',
+    description: 'Especialistas em galpões industriais premoldados e estruturas metálicas em Santa Catarina. Sistema premoldado com engenheiro CREA ativo.',
     url: 'https://premolde.com.br',
   },
   alternates: {
@@ -42,7 +52,7 @@ export default function RootLayout({
             "@type": "LocalBusiness",
             "name": "Premolde",
             "image": "https://premolde.com.br/leonardo.png",
-            "description": "Especialistas em galpões industriais, estruturas metálicas e projetos estruturais em Santa Catarina.",
+            "description": "Especialistas em galpões industriais premoldados, estruturas metálicas e projetos estruturais em Santa Catarina. Sistema premoldado com engenheiro CREA ativo.",
             "address": {
               "@type": "PostalAddress",
               "addressRegion": "SC",
@@ -58,12 +68,27 @@ export default function RootLayout({
             "priceRange": "$$",
             "areaServed": [
               "Orleans",
-              "Urussanga",
+              "Urussanga", 
               "Lauro Müller",
               "Morro da Fumaça",
               "São Ludgero",
-              "Braço do Norte"
-            ]
+              "Braço do Norte",
+              "Criciúma",
+              "Tubarão"
+            ],
+            "serviceType": [
+              "Galpões Industriais Premoldados",
+              "Estruturas Metálicas",
+              "Construção Premoldada",
+              "Projetos Estruturais",
+              "Engenharia Civil",
+              "Sistema Premoldado"
+            ],
+            "founder": {
+              "@type": "Person",
+              "name": "Leonardo Scremin Junior",
+              "jobTitle": "Engenheiro Civil"
+            }
           })
         }} />
       </head>

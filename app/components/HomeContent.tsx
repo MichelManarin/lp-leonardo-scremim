@@ -175,8 +175,17 @@ export default function HomeContent({ city }: HomeContentProps) {
             <div className="hero-text">
               <span className="hero-pre-title">Engenharia de Excelência em Santa Catarina</span>
               <h1 className="hero-title" style={{fontSize: '3rem'}}>
-                <span className="hero-highlight">Galpões Industriais</span>{' '}<br />
-                de Alta Qualidade
+                {city ? (
+                  <>
+                    <span className="hero-highlight">Premoldado {city}</span>{' '}<br />
+                    Galpões Industriais de Alta Qualidade
+                  </>
+                ) : (
+                  <>
+                    <span className="hero-highlight">Galpões Industriais</span>{' '}<br />
+                    de Alta Qualidade
+                  </>
+                )}
               </h1>
               <p className="hero-description">
                 {city ? (
@@ -211,7 +220,7 @@ export default function HomeContent({ city }: HomeContentProps) {
               <div className="hero-image-dot-pattern"></div>
               <div className="hero-image-line"></div>
               <div className="hero-image-ruler"></div>
-              <img src="/assets/section-hero.png" alt="Projeto de construção" />
+              <img src="/assets/section-hero.png" alt={city ? `Projeto de galpão industrial premoldado em ${city}, Santa Catarina` : "Projeto de galpão industrial premoldado em Santa Catarina"} />
             </div>
           </div>
         </div>
@@ -462,7 +471,7 @@ export default function HomeContent({ city }: HomeContentProps) {
             
             <div className="about-image">
               <div className="image-container">
-                <img src="/leonardo.png" alt="Leonardo Scremin Junior - Engenheiro Civil" />
+                <img src="/leonardo.png" alt={city ? `Leonardo Scremin Junior - Engenheiro Civil especialista em premoldados em ${city}, SC` : "Leonardo Scremin Junior - Engenheiro Civil especialista em premoldados"} />
                 <div className="image-overlay">
                   <div className="overlay-content">
                     <h4>Leonardo Scremin Junior</h4>
@@ -565,33 +574,33 @@ export default function HomeContent({ city }: HomeContentProps) {
 
           <div className="cities-grid">
             <div className="city-card">
-              <h3>Premolde Orleans</h3>
-              <p>Galpões industriais e estruturas metálicas em Orleans, SC. Projetos estruturais com qualidade e segurança.</p>
+              <h3>Premoldado Orleans</h3>
+              <p>Galpões industriais premoldados e estruturas metálicas em Orleans, SC. Projetos estruturais com qualidade e segurança utilizando sistema premoldado.</p>
             </div>
             
             <div className="city-card">
-              <h3>Premolde Urussanga</h3>
-              <p>Construção de galpões industriais em Urussanga, SC. Engenharia estrutural de excelência.</p>
+              <h3>Premoldado Urussanga</h3>
+              <p>Construção de galpões industriais premoldados em Urussanga, SC. Engenharia estrutural de excelência com tecnologia premoldada.</p>
             </div>
             
             <div className="city-card">
-              <h3>Premolde Lauro Müller</h3>
-              <p>Estruturas metálicas e galpões industriais em Lauro Müller, SC. Projetos sob medida.</p>
+              <h3>Premoldado Lauro Müller</h3>
+              <p>Estruturas metálicas e galpões industriais premoldados em Lauro Müller, SC. Projetos sob medida com sistema premoldado.</p>
             </div>
             
             <div className="city-card">
-              <h3>Premolde Morro da Fumaça</h3>
-              <p>Galpões industriais em Morro da Fumaça, SC. Construção civil com qualidade garantida.</p>
+              <h3>Premoldado Morro da Fumaça</h3>
+              <p>Galpões industriais premoldados em Morro da Fumaça, SC. Construção civil com qualidade garantida usando tecnologia premoldada.</p>
             </div>
             
             <div className="city-card">
-              <h3>Premolde São Ludgero</h3>
-              <p>Projetos estruturais e galpões industriais em São Ludgero, SC. Engenharia de confiança.</p>
+              <h3>Premoldado São Ludgero</h3>
+              <p>Projetos estruturais e galpões industriais premoldados em São Ludgero, SC. Engenharia de confiança com sistema premoldado.</p>
             </div>
             
             <div className="city-card">
-              <h3>Premolde Braço do Norte</h3>
-              <p>Estruturas metálicas e galpões industriais em Braço do Norte, SC. Qualidade e durabilidade.</p>
+              <h3>Premoldado Braço do Norte</h3>
+              <p>Estruturas metálicas e galpões industriais premoldados em Braço do Norte, SC. Qualidade e durabilidade com tecnologia premoldada.</p>
             </div>
           </div>
         </div>
@@ -661,6 +670,206 @@ export default function HomeContent({ city }: HomeContentProps) {
                   <p className="testimonial-role">Proprietário, Indústria de Manufatura</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Premoldado Explanation Section */}
+      <section className="premoldado-section" id="premoldado">
+        <div className="container">
+          <div className="section-header text-center">
+            <span className="section-subtitle">Entenda a Diferença</span>
+            <h2 className="section-title">
+              {city ? (
+                `Premoldado ${city}: Tecnologia e Qualidade`
+              ) : (
+                'Premoldado: Tecnologia e Qualidade'
+              )}
+            </h2>
+            <p className="section-description">
+              {city ? (
+                `Conheça as vantagens dos sistemas premoldados em ${city} e toda região sul de Santa Catarina.`
+              ) : (
+                'Conheça as vantagens dos sistemas premoldados em Santa Catarina.'
+              )}
+            </p>
+          </div>
+
+          <div className="premoldado-content">
+            <div className="premoldado-intro">
+              <div className="premoldado-icon">
+                <FontAwesomeIcon icon={faBuilding} />
+              </div>
+              <h3>O que é Premoldado?</h3>
+              <p>
+                O sistema premoldado é uma tecnologia avançada de construção onde as peças estruturais 
+                são produzidas em ambiente controlado e depois transportadas e montadas no local da obra. 
+                {city && ` Em ${city}, utilizamos esta tecnologia para garantir máxima qualidade e eficiência.`}
+              </p>
+            </div>
+            
+            <div className="premoldado-advantages">
+              <h3>
+                <FontAwesomeIcon icon={faAward} className="section-icon" />
+                Vantagens do Sistema Premoldado
+              </h3>
+              
+              <div className="advantages-grid">
+                <div className="advantage-card">
+                  <div className="advantage-icon">
+                    <FontAwesomeIcon icon={faClock} />
+                  </div>
+                  <div className="advantage-content">
+                    <h4>Rapidez na execução</h4>
+                    <p>Redução de até 50% no tempo de construção</p>
+                  </div>
+                </div>
+
+                <div className="advantage-card">
+                  <div className="advantage-icon">
+                    <FontAwesomeIcon icon={faCheckCircle} />
+                  </div>
+                  <div className="advantage-content">
+                    <h4>Controle de qualidade</h4>
+                    <p>Peças produzidas em ambiente controlado</p>
+                  </div>
+                </div>
+
+                <div className="advantage-card">
+                  <div className="advantage-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L12 2L3 7V9C3 14.55 6.84 19.74 12 21C17.16 19.74 21 14.55 21 9Z"/>
+                    </svg>
+                  </div>
+                  <div className="advantage-content">
+                    <h4>Economia</h4>
+                    <p>Menor desperdício de materiais e mão de obra</p>
+                  </div>
+                </div>
+
+                <div className="advantage-card">
+                  <div className="advantage-icon">
+                    <FontAwesomeIcon icon={faHardHat} />
+                  </div>
+                  <div className="advantage-content">
+                    <h4>Durabilidade</h4>
+                    <p>Estruturas com vida útil superior a 50 anos</p>
+                  </div>
+                </div>
+
+                <div className="advantage-card">
+                  <div className="advantage-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.17 22L6.58 17.58C8.13 15.36 10.48 13.95 13.25 13.45C15.58 13.06 17.8 12.23 19.77 10.93L21.46 14.25L22.81 13.58C22.81 13.58 21.91 9.08 19.77 7.93L17 8ZM8.35 13.32C9.96 11.71 12.32 11.85 13.93 13.46C15.54 15.07 15.68 17.43 14.07 19.04C12.46 20.65 10.1 20.51 8.49 18.9C6.88 17.29 6.74 14.93 8.35 13.32Z"/>
+                    </svg>
+                  </div>
+                  <div className="advantage-content">
+                    <h4>Sustentabilidade</h4>
+                    <p>Processo mais limpo e com menos impacto ambiental</p>
+                  </div>
+                </div>
+
+                <div className="advantage-card highlight-card">
+                  <div className="advantage-icon">
+                    <FontAwesomeIcon icon={faTools} />
+                  </div>
+                  <div className="advantage-content">
+                    <h4>Engenharia Própria</h4>
+                    <p>Projetos calculados e executados com precisão técnica</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {city && (
+              <div className="city-highlight">
+                <div className="city-highlight-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2L2 7V10C2 16 6 20.5 12 22C18 20.5 22 16 22 10V7L12 2Z"/>
+                  </svg>
+                </div>
+                <h4>Premoldado em {city}</h4>
+                <p>
+                  Nossa empresa atende toda a região com projetos estruturais premoldados, 
+                  oferecendo soluções personalizadas para cada necessidade industrial e comercial.
+                </p>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="faq-section" id="faq">
+        <div className="container">
+          <div className="section-header text-center">
+            <span className="section-subtitle">Dúvidas Frequentes</span>
+            <h2 className="section-title">
+              {city ? (
+                `FAQ sobre Premoldados em ${city}`
+              ) : (
+                'Perguntas Frequentes sobre Premoldados'
+              )}
+            </h2>
+            <p className="section-description">
+              Tire suas principais dúvidas sobre galpões industriais premoldados e nossos serviços.
+            </p>
+          </div>
+
+          <div className="faq-grid">
+            <div className="faq-item">
+              <h3>O que é um galpão premoldado?</h3>
+              <p>
+                Um galpão premoldado é uma estrutura industrial construída com elementos de concreto 
+                pré-fabricados em ambiente controlado. {city && `Em ${city}, `}oferecemos galpões premoldados 
+                com maior rapidez de execução, controle de qualidade superior e custos otimizados.
+              </p>
+            </div>
+
+            <div className="faq-item">
+              <h3>Qual a diferença entre premoldado e pré-fabricado?</h3>
+              <p>
+                Premoldado refere-se a elementos produzidos no próprio canteiro ou próximo à obra, 
+                enquanto pré-fabricado é produzido em fábrica. Ambos oferecem vantagens como rapidez 
+                e qualidade controlada para galpões industriais.
+              </p>
+            </div>
+
+            <div className="faq-item">
+              <h3>Quanto tempo leva para construir um galpão premoldado?</h3>
+              <p>
+                {city ? `Em ${city}, um ` : 'Um '}galpão industrial premoldado pode ser construído em 
+                30 a 60 dias, dependendo do tamanho e complexidade. Isso representa uma redução de 
+                até 50% no tempo comparado à construção convencional.
+              </p>
+            </div>
+
+            <div className="faq-item">
+              <h3>Galpões premoldados são mais econômicos?</h3>
+              <p>
+                Sim! Os galpões premoldados oferecem economia significativa devido à redução de 
+                desperdícios, menor tempo de construção e otimização de materiais. O custo-benefício 
+                é superior à construção tradicional.
+              </p>
+            </div>
+
+            <div className="faq-item">
+              <h3>Qual a durabilidade de um galpão premoldado?</h3>
+              <p>
+                Galpões industriais premoldados têm vida útil superior a 50 anos quando bem projetados 
+                e executados. Utilizamos concreto de alta resistência e seguimos rigorosamente as 
+                normas técnicas brasileiras.
+              </p>
+            </div>
+
+            <div className="faq-item">
+              <h3>Atendem toda região sul de Santa Catarina?</h3>
+              <p>
+                Sim! Atendemos {city && `${city}, `}Orleans, Criciúma, Urussanga, Lauro Müller, 
+                Morro da Fumaça, São Ludgero, Braço do Norte, Tubarão e toda região sul de Santa Catarina 
+                com projetos de galpões premoldados e estruturas metálicas.
+              </p>
             </div>
           </div>
         </div>

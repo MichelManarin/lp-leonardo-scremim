@@ -33,7 +33,7 @@ export default function HomeContent({ city }: HomeContentProps) {
 
   // Controlar a animação de construção
   useEffect(() => {
-    let animationInterval: number | undefined;
+    let animationInterval: NodeJS.Timeout | undefined;
     
     if (isPlaying) {
       animationInterval = setInterval(() => {

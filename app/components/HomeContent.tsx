@@ -143,7 +143,9 @@ export default function HomeContent({ city }: HomeContentProps) {
       <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
         <div className="container">
           <div className="logo">
-            <span className="logo-text">Pre<span className="logo-accent">molde</span></span>
+            <a href="#home" className="logo-link">
+              <span className="logo-text">Pre<span className="logo-accent">molde</span></span>
+            </a>
           </div>
 
           <div className={`menu-toggle ${menuOpen ? 'active' : ''}`} onClick={() => setMenuOpen(!menuOpen)}>
@@ -950,7 +952,9 @@ export default function HomeContent({ city }: HomeContentProps) {
           <div className="footer-top">
             <div className="footer-column">
               <div className="footer-logo">
-                <span className="logo-text">Pre<span className="logo-accent">molde</span></span>
+                <a href="#home" className="logo-link">
+                  <span className="logo-text">Pre<span className="logo-accent">molde</span></span>
+                </a>
               </div>
               <p className="footer-description">
                 Construindo excelência com precisão, qualidade e inovação. Sua visão, nossa expertise.

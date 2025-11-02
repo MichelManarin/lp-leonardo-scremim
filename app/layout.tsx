@@ -31,6 +31,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://premolde.com.br',
   },
+  verification: {
+    google: 'w4z5DWX6C161D4OgugQOzEBl7ZZUL6QU3X4VRvIGCjY',
+  },
 }
 
 export default function RootLayout({
@@ -42,6 +45,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google-site-verification" content="w4z5DWX6C161D4OgugQOzEBl7ZZUL6QU3X4VRvIGCjY" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
